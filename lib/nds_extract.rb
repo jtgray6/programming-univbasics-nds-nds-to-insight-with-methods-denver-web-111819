@@ -31,7 +31,7 @@ def gross_for_director(director_data)
   # binding.pry
   gross=0
   row=0
-  while row<director_data.length do
+  while row<director_data[:movies].length do
     column=0
     while column<director_data[row][:movies].length do
       gross+=director_data[row][:movies][column][:worldwide_gross]
