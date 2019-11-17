@@ -30,14 +30,10 @@ def gross_for_director(director_data)
   # pp director_data
   # binding.pry
   gross=0
-  row=0
-  while row<director_data[:movies].length do
-    column=0
-    while column<director_data[row][:movies].length do
-      gross+=director_data[row][:movies][column][:worldwide_gross]
-      column+=1
-    end
-    row+=1
+  mov_num=0
+  while mov_num<director_data[:movies].length do
+    gross+=director_data[:movies][mov_num][:worldwide_gross]
+    mov_num+=1
   end
   gross
 end
