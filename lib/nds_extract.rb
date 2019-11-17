@@ -27,8 +27,8 @@ end
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
 def gross_for_director(director_data)
-  pp director_data
-  binding.pry
+  # pp director_data
+  # binding.pry
   # gross=0
   # row=0
   # while row<director_data.length do
